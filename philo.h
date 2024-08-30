@@ -27,8 +27,8 @@ struct	s_table;
 typedef struct s_philo
 {
 	int				id;
-	pthread_t		t_id_philo;
-	t_table			*table;
+	pthread_t		*t_id_philo;
+	struct s_table	*table;
 	int				eat_count;
 	int				eating;
 	long long		time_be_dead;
@@ -40,7 +40,7 @@ typedef struct s_philo
 
 typedef struct s_table
 {
-	pthread_t		*t_id_table;
+	pthread_t		t_id_table;
 	int				nb_philo;
 	long long		time_die;
 	long long		time_eat;
@@ -49,7 +49,7 @@ typedef struct s_table
 	int				dead;
 	int				finished;
 	t_philo			*philo;
-	// long long		start_time;
+	long long		start_time;
 	pthread_mutex_t	*forks; 
 	pthread_mutex_t	lock;
 	pthread_mutex_t	write;
