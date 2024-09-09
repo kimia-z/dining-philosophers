@@ -113,7 +113,6 @@ int	eat(t_philo *philo)
 	write_msg(philo, "is eating\n");
 	if (usleep((philo->table->time_eat) * 1000) != 0)
 		return (-1);
-	//usleep eat_time
 	philo->eating = 0;
 	if (pthread_mutex_unlock(&philo->lock) != 0)
 		return (-1);
@@ -181,6 +180,7 @@ void	*routine(void *data)
 	t_philo	*philo;
 
 	philo = (t_philo *)data;
+	philo->time_be_dead = philo->table->time_die + get_time();
 	while (philo->table->dead == 0)
 	{
 		//eat
@@ -252,8 +252,7 @@ int	one_philo(t_table *table)
 	// wait for the die time
 	//die and end
 	table->start_time = get_time();
-	printf("%lld\n",table->start_time);
-	write_msg(table->philo, "kar mikone???\n");
+	// write_msg(table->philo, "kar mikone???\n");
 	if (pthread_create(&table->philo->t_id_philo[0], NULL, &routine, &table->philo[0]) != 0)
 	{
 		return (-1);
