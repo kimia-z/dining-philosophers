@@ -27,7 +27,7 @@ struct	s_table;
 typedef struct s_philo
 {
 	int				id;
-	pthread_t		*t_id_philo;
+	pthread_t		t_id_philo;
 	struct s_table	*table;
 	int				eat_count;
 	int				eating;

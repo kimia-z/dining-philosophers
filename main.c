@@ -83,11 +83,11 @@ int	take_forks(t_philo *philo)
 	if (pthread_mutex_lock(philo->right_fork) != 0)
 		return (-1);
 	//msg fork taken
-	write_msg(philo, "has taken a fork\n");
+	write_msg(philo, "has taken a right fork\n");
 	if (pthread_mutex_lock(philo->left_fork) != 0)
 		return (-1);
 	//msg fork taken
-	write_msg(philo, "has taken a fork\n");
+	write_msg(philo, "has taken a left fork\n");
 	return (0);
 }
 
@@ -126,57 +126,59 @@ int	eat(t_philo *philo)
 // 		the current state of the simulation (specifically, whether someone is dead).
 // */
 
-// void	*table_observer(void *data)
-// {
-// 	t_philo	*philo;
+void	*table_observer(void *data)
+{
+	t_philo	*philo;
 
-// 	philo = (t_philo *)data;
-// 	while (philo->table->dead == 0)
-// 	{
-// 		if (pthread_mutex_lock(&philo->lock) != 0)
-// 			return ((void *)(-1));
-// 		if (philo->eat_count == philo->table->nb_meals)
-// 		{
-// 			if (pthread_mutex_lock(&philo->table->lock) != 0)
-// 				return ((void *)(-1));
-// 			philo->table->finished ++;
-// 			philo->eat_count++;
-// 			if (philo->table->finished == philo->table->nb_philo)
-// 			{
-// 				philo->table->dead = 1;
-// 			}
-// 			printf("dead=%d\n", philo->table->dead);
-// 			if (pthread_mutex_unlock(&philo->table->lock) != 0)
-// 				return ((void *)(-1));
-// 		}
-// 		if (pthread_mutex_unlock(&philo->lock) != 0)
-// 			return ((void *)(-1));
-// 	}
-// 	// if (pthread_mutex_lock(&philo->table->write) != 0)
-// 	// 	return ((void *)(-1));
-// 	// printf("dead=%d\n", philo->table->dead);
-// 	// if (pthread_mutex_unlock(&philo->table->write) != 0)
-// 	// 	return ((void *)(-1));
-// 	// while (philo->table->dead == 0)
-// 	// {
-// 	// 	if (pthread_mutex_lock(&philo->table->lock) != 0)
-// 	// 		return ((void *)-1);
-// 	// 	if (philo->table->finished == philo->table->nb_philo)
-// 	// 	{
-// 	// 		philo->table->dead = 1;
-// 	// 	}
-// 	// 	if (pthread_mutex_unlock(&philo->table->lock) != 0)
-// 	// 		return ((void *)(-1));
-// 	// }
-// 	return ((void *)(0));
-// }
+	philo = (t_philo *)data;
+	while (philo->table->dead == 0)
+	{
+		if (pthread_mutex_lock(&philo->lock) != 0)
+			return ((void *)(-1));
+		if (pthread_mutex_lock(&philo->table->lock) != 0)
+			return ((void *)(-1));
+		if (philo->eat_count == philo->table->nb_meals)
+		{
+			philo->table->finished ++;
+			philo->eat_count++;
+			if (philo->table->finished == philo->table->nb_philo)
+			{
+				philo->table->dead = 1;
+			}
+		}
+		if (get_time() > philo->time_be_dead)
+		{
+			philo->table->dead = 1;
+		}
+		if (pthread_mutex_unlock(&philo->table->lock) != 0)
+			return ((void *)(-1));
+		if (pthread_mutex_unlock(&philo->lock) != 0)
+			return ((void *)(-1));
+	}
+	// if (pthread_mutex_lock(&philo->table->write) != 0)
+	// 	return ((void *)(-1));
+	// printf("dead=%d\n", philo->table->dead);
+	// if (pthread_mutex_unlock(&philo->table->write) != 0)
+	// 	return ((void *)(-1));
+	// while (philo->table->dead == 0)
+	// {
+	// 	if (pthread_mutex_lock(&philo->table->lock) != 0)
+	// 		return ((void *)-1);
+	// 	if (philo->table->finished == philo->table->nb_philo)
+	// 	{
+	// 		philo->table->dead = 1;
+	// 	}
+	// 	if (pthread_mutex_unlock(&philo->table->lock) != 0)
+	// 		return ((void *)(-1));
+	// }
+	return ((void *)(0));
+}
 
 // /*Purpose: Each philosopher's routine thread handles the philosopher's actions,
 // 	including eating, thinking, and possibly dying.*/
 
 void	*routine(void *data)
 {
-	printf("injaaaaaa\n");
 	t_philo	*philo;
 
 	philo = (t_philo *)data;
@@ -252,42 +254,49 @@ int	one_philo(t_table *table)
 	// wait for the die time
 	//die and end
 	table->start_time = get_time();
-	// write_msg(table->philo, "kar mikone???\n");
-	if (pthread_create(&table->philo->t_id_philo[0], NULL, &routine, &table->philo[0]) != 0)
+	if (pthread_create(&table->t_id_table, NULL, &table_observer, &table->philo[0]) != 0)
 	{
 		return (-1);
 	}
-	if (pthread_join(table->philo->t_id_philo[0], NULL) != 0)
+	if (pthread_create(&table->philo->t_id_philo, NULL, &routine, &table->philo[0]) != 0)
+	{
+		return (-1);
+	}
+	if (pthread_join(table->philo->t_id_philo, NULL) != 0)
+	{
+		return (-1);
+	}
+	if (pthread_join(table->philo->t_id_philo, NULL) != 0)
 	{
 		return (-1);
 	}
 	while (table->dead == 0)
 	{
-		usleep(0);
+		usleep(500);
 	}
 	return (0);
 }
 
-int	init_philo(t_table *table, t_philo *philo)
+int	init_philo(t_table *table)
 {
 	int		i;
 
 	i = 0;
-	philo->t_id_philo = malloc (table->nb_philo * sizeof(pthread_t));
-	if (philo->t_id_philo == NULL)
-	{
-		return (-1);
-	}
+	// philo->t_id_philo = malloc (table->nb_philo * sizeof(pthread_t));
+	// if (philo->t_id_philo == NULL)
+	// {
+	// 	return (-1);
+	// }
 	while (i < table->nb_philo)
 	{
-		philo[i].id = i + 1;
-		philo[i].table = table;
-		philo[i].time_be_dead = table->time_die;
-		philo[i].eat_count = 0;
-		philo[i].eating = 0;
-		philo[i].right_fork = &table->forks[i % table->nb_philo];
-		philo[i].left_fork = &table->forks[(i + 1) % table->nb_philo];
-		pthread_mutex_init(&philo[i].lock, NULL);
+		table->philo[i].id = i + 1;
+		table->philo[i].table = table;
+		table->philo[i].time_be_dead = 0;
+		table->philo[i].eat_count = 0;
+		table->philo[i].eating = 0;
+		table->philo[i].right_fork = &table->forks[i % table->nb_philo];
+		table->philo[i].left_fork = &table->forks[(i + 1) % table->nb_philo];
+		pthread_mutex_init(&(table->philo[i]).lock, NULL);
 		i++;
 	}
 	return (0);
@@ -340,11 +349,10 @@ int	init_table(char *argv[], t_table *table)
 	return (0);
 }
 
-int	init_all(int argc, char **argv, t_table *table, t_philo *philo)
+int	init_all(int argc, char **argv, t_table *table)
 {
 	int	i;
 	
-
 	i = 1;
 	while (i < argc)
 	{
@@ -356,7 +364,8 @@ int	init_all(int argc, char **argv, t_table *table, t_philo *philo)
 	{
 		return (-1);
 	}
-	if (init_philo(table, philo) == -1)
+	
+	if (init_philo(table) == -1)
 	{
 		return (-1);
 	}
@@ -366,18 +375,18 @@ int	init_all(int argc, char **argv, t_table *table, t_philo *philo)
 int	main(int argc, char *argv[])
 {
 	t_table	table;
-	t_philo	philo;
 
 	if (argc != 5 && argc != 6)
 	{
 		printf("invalid number of arguments!\n");
 		return (-1);
 	}
-	if (init_all(argc, argv, &table, &philo) == -1)
+	if (init_all(argc, argv, &table) == -1)
 	{
 		printf("invalid arguments!\n");
 		return (-1);
 	}
+	printf("kiiiiiiiir %lld\n", table.philo->time_be_dead);
 	if (table.nb_philo == 1)
 	{
 		return (one_philo(&table));
