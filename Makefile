@@ -2,11 +2,11 @@ NAME = philo
 
 SRCS = main.c
 
-FLAGS = -Wall -Wextra -Werror -g -pthread
+FLAGS = -Wall -Wextra -Werror -pthread
 
 HEADER = philo.h
 
-SANITIZER = -fsanitize=address #-fsanitize=thread 
+SANITIZER = -fsanitize=thread #-fsanitize=address 
 
 all: $(NAME)
 

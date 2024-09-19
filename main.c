@@ -66,15 +66,16 @@ long long	get_time()
 
 int	write_msg(t_philo *philo, char *msg)
 {
-	// if (pthread_mutex_lock(&philo->table->write) != 0)
-	// {
-	// 	return (-1);
-	// }
+	if (pthread_mutex_lock(&philo->table->write) != 0)
+	{
+		return (-1);
+	}
 	printf("%lld %d %s", get_time(), philo->id, msg);
-	// if (pthread_mutex_unlock(&philo->table->write) != 0)
-	// {
-	// 	return (-1);
-	// }
+	//printf("get time:%lld be dead:%lld\n",get_time(), philo->time_be_dead);
+	if (pthread_mutex_unlock(&philo->table->write) != 0)
+	{
+		return (-1);
+	}
 	return (0);
 }
 
@@ -82,11 +83,9 @@ int	take_forks(t_philo *philo)
 {
 	if (pthread_mutex_lock(philo->right_fork) != 0)
 		return (-1);
-	//msg fork taken
 	write_msg(philo, "has taken a right fork\n");
 	if (pthread_mutex_lock(philo->left_fork) != 0)
 		return (-1);
-	//msg fork taken
 	write_msg(philo, "has taken a left fork\n");
 	return (0);
 }
@@ -128,49 +127,42 @@ int	eat(t_philo *philo)
 
 void	*table_observer(void *data)
 {
-	t_philo	*philo;
+	t_table	*table;
 
-	philo = (t_philo *)data;
-	while (philo->table->dead == 0)
+	table = (t_table *)data;
+	// printf("in table observer dead:%d\n", table->dead);
+	// printf("in table observer time sleep:%lld\n", table->time_sleep);
+	while (table->dead == 0)
 	{
-		if (pthread_mutex_lock(&philo->lock) != 0)
+		if (pthread_mutex_lock(&table->lock) != 0)
 			return ((void *)(-1));
-		if (pthread_mutex_lock(&philo->table->lock) != 0)
-			return ((void *)(-1));
-		if (philo->eat_count == philo->table->nb_meals)
+		// if (pthread_mutex_lock(&table->philo->lock) != 0)
+		// 	return ((void *)(-1));
+		//printf("in table observer\n");
+		if (table->philo->eat_count == table->nb_meals)
 		{
-			philo->table->finished ++;
-			philo->eat_count++;
-			if (philo->table->finished == philo->table->nb_philo)
+			//printf("in table observer2222222222\n");
+			table->finished++;
+			table->philo->eat_count++;
+			if (table->finished == table->nb_philo)
 			{
-				philo->table->dead = 1;
+				table->dead = 1;
 			}
 		}
-		if (get_time() > philo->time_be_dead)
+		//printf("get time:%lld be dead:%lld\n",get_time(), table->philo->time_be_dead);
+		if (get_time() > table->philo->time_be_dead)
 		{
-			philo->table->dead = 1;
+			//printf("time be dead:%lld\n", table->philo->time_be_dead);
+			// printf("get time:%lld be dead:%lld\n",get_time(), table->philo->time_be_dead);
+			// printf("someone dead!!!!");
+			write_msg(table->philo, "deaddddddd\n");
+			table->dead = 1;
 		}
-		if (pthread_mutex_unlock(&philo->table->lock) != 0)
-			return ((void *)(-1));
-		if (pthread_mutex_unlock(&philo->lock) != 0)
+		// if (pthread_mutex_unlock(&table->philo->lock) != 0)
+		// 	return ((void *)(-1));
+		if (pthread_mutex_unlock(&table->lock) != 0)
 			return ((void *)(-1));
 	}
-	// if (pthread_mutex_lock(&philo->table->write) != 0)
-	// 	return ((void *)(-1));
-	// printf("dead=%d\n", philo->table->dead);
-	// if (pthread_mutex_unlock(&philo->table->write) != 0)
-	// 	return ((void *)(-1));
-	// while (philo->table->dead == 0)
-	// {
-	// 	if (pthread_mutex_lock(&philo->table->lock) != 0)
-	// 		return ((void *)-1);
-	// 	if (philo->table->finished == philo->table->nb_philo)
-	// 	{
-	// 		philo->table->dead = 1;
-	// 	}
-	// 	if (pthread_mutex_unlock(&philo->table->lock) != 0)
-	// 		return ((void *)(-1));
-	// }
 	return ((void *)(0));
 }
 
@@ -182,12 +174,15 @@ void	*routine(void *data)
 	t_philo	*philo;
 
 	philo = (t_philo *)data;
-	philo->time_be_dead = philo->table->time_die + get_time();
+	// philo->time_be_dead = philo->table->time_die + get_time();
+	//printf("start of routine\n");
 	while (philo->table->dead == 0)
 	{
+		//printf("in routine2222222\n");
 		//eat
 		if (eat(philo) != 0)
 			return ((void *)-1);
+		//printf("in routine3333333\n");
 		//sleep
 		write_msg(philo, "is sleeping\n");
 		if (usleep((philo->table->time_sleep) * 1000) != 0)
@@ -201,52 +196,52 @@ void	*routine(void *data)
 	return ((void *)(0));
 }
 
-// int	join_function(t_philo *philo, int ret_value, int position, bool is_philo)
-// {
-// 	if (!is_philo && pthread_join(philo->table->t_id_table, NULL) != 0)
-// 	{
-// 		return (-1);
-// 	}
-// 	else if (is_philo && ret_value != 0)
-// 	{
-// 		while (position >= 0)
-// 		{
-// 			pthread_join(philo->t_id_philo[position], NULL);
-// 			position--;
-// 		}
-// 		return (-1);
-// 	}
-// 	if (pthread_join(philo->t_id_philo[position], NULL) != 0)
-// 	{
-// 		return (-1);
-// 	}
-// }
+int	join_function(t_philo *philo, int ret_value, int position, bool is_philo)
+{
+	if (!is_philo && pthread_join(philo->table->t_id_table, NULL) != 0)
+	{
+		return (-1);
+	}
+	else if (is_philo && ret_value != 0)
+	{
+		while (position >= 1)
+		{
+			pthread_join(philo->t_id_philo[position - 1], NULL);
+			position--;
+		}
+		return (-1);
+	}
+	if (pthread_join(philo->t_id_philo[position], NULL) != 0)
+	{
+		return (-1);
+	}
+}
 
-// int	init_thread(t_table *table, t_philo *philo)
-// {
-// 	int			i;
-// 	int			create_value;
-// 	int			join_value;
+int	init_thread(t_table *table)
+{
+	int			i;
+	int			create_value;
+	int			join_value;
 
-// 	i = 0;
-// 	//start time
-// 	create_value = pthread_create(table->t_id_table, NULL, &table_observer, &philo);
-// 	//it is only one if it fails it can not join and do not need join
-// 	if (join_function(philo, create_value, 0, false) == -1)
-// 	{
-// 		return (-1);
-// 	}
-// 	table->start_time = get_time();
-// 	while(i < table->nb_philo)
-// 	{
-// 		create_value = pthread_create(philo->t_id_philo[i], NULL, &routine, &philo[i]);
-// 		if (join_function(philo, create_value, i, true) == -1)
-// 		{
-// 			return (-1);
-// 		}
-// 		i++;
-// 	}
-// }
+	i = 0;
+	table->start_time = get_time();
+	create_value = pthread_create(table->t_id_table, NULL, &table_observer, table);
+	//it is only one if it fails it can not join and do not need join
+	if (join_function(table->philo, create_value, 0, false) == -1)
+	{
+		return (-1);
+	}
+	//table->start_time = get_time();
+	while(i < table->nb_philo)
+	{
+		create_value = pthread_create(table->philo[i].t_id_philo, NULL, &routine, &table->philo[i]);
+		if (join_function(table->philo, create_value, i, true) == -1)
+		{
+			return (-1);
+		}
+		i++;
+	}
+}
 
 int	one_philo(t_table *table)
 {
@@ -254,7 +249,9 @@ int	one_philo(t_table *table)
 	// wait for the die time
 	//die and end
 	table->start_time = get_time();
-	if (pthread_create(&table->t_id_table, NULL, &table_observer, &table->philo[0]) != 0)
+	table->philo->time_be_dead = table->time_die + get_time();
+	//printf("before table observer time sleep:%lld\n", table->time_sleep);
+	if (pthread_create(&table->t_id_table, NULL, &table_observer, table) != 0)
 	{
 		return (-1);
 	}
@@ -262,18 +259,18 @@ int	one_philo(t_table *table)
 	{
 		return (-1);
 	}
-	if (pthread_join(table->philo->t_id_philo, NULL) != 0)
+	if (pthread_detach(table->philo->t_id_philo) != 0)
 	{
 		return (-1);
 	}
-	if (pthread_join(table->philo->t_id_philo, NULL) != 0)
+	if (pthread_join(table->t_id_table, NULL) != 0)
 	{
 		return (-1);
 	}
-	while (table->dead == 0)
-	{
-		usleep(500);
-	}
+	// while (table->dead == 0)
+	// {
+	// 	usleep(500);
+	// }
 	return (0);
 }
 
@@ -291,7 +288,7 @@ int	init_philo(t_table *table)
 	{
 		table->philo[i].id = i + 1;
 		table->philo[i].table = table;
-		table->philo[i].time_be_dead = 0;
+		table->philo[i].time_be_dead = table->time_die;
 		table->philo[i].eat_count = 0;
 		table->philo[i].eating = 0;
 		table->philo[i].right_fork = &table->forks[i % table->nb_philo];
@@ -386,15 +383,14 @@ int	main(int argc, char *argv[])
 		printf("invalid arguments!\n");
 		return (-1);
 	}
-	printf("kiiiiiiiir %lld\n", table.philo->time_be_dead);
 	if (table.nb_philo == 1)
 	{
 		return (one_philo(&table));
 	}
-	// if (init_thread(&table, &philo) == -1)
-	// {
-	// 	return (-1);
-	// }
+	if (init_thread(&table) == -1)
+	{
+		return (-1);
+	}
 	// // exit and clean
 	// clean_up();
 	return (0);
