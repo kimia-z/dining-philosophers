@@ -12,20 +12,26 @@
 
 #include "philo.h"
 
-int	check_digit(char *arg)
+
+void	error_msg(char *msg)
+{
+	printf("%s\n", msg);
+}
+
+bool	check_digit(char *arg)
 {
 	int	i;
 
 	i = 0;
 	if (!arg[i])
-		return (-1);
+		return (error_msg("invalid argument!"), false);
 	while (arg[i])
 	{
 		if (arg[i] < '0' || arg[i] > '9')
-			return (-1);
+			return (error_msg("invalid argument!"), false);
 		i++;
 	}
-	return (0);
+	return (true);
 }
 
 int	ft_atoi(const char *nptr)
@@ -196,94 +202,122 @@ void	*routine(void *data)
 	return ((void *)(0));
 }
 
-int	join_function(t_philo *philo, int ret_value, int position, bool is_philo)
+// int	join_function(t_philo *philo, int ret_value, int position, bool is_philo)
+// {
+// 	if (!is_philo && pthread_join(philo->table->t_id_table, NULL) != 0)
+// 	{
+// 		return (-1);
+// 	}
+// 	else if (is_philo && ret_value != 0)
+// 	{
+// 		while (position >= 1)
+// 		{
+// 			pthread_join(philo->t_id_philo[position - 1], NULL);
+// 			position--;
+// 		}
+// 		return (-1);
+// 	}
+// 	if (pthread_join(philo->t_id_philo[position], NULL) != 0)
+// 	{
+// 		return (-1);
+// 	}
+// }
+
+// int	init_thread(t_table *table)
+// {
+// 	int			i;
+// 	int			create_value;
+// 	int			join_value;
+
+// 	i = 0;
+// 	table->start_time = get_time();
+// 	create_value = pthread_create(table->t_id_table, NULL, &table_observer, table);
+// 	//it is only one if it fails it can not join and do not need join
+// 	if (join_function(table->philo, create_value, 0, false) == -1)
+// 	{
+// 		return (-1);
+// 	}
+// 	//table->start_time = get_time();
+// 	while(i < table->nb_philo)
+// 	{
+// 		create_value = pthread_create(table->philo[i].t_id_philo, NULL, &routine, &table->philo[i]);
+// 		if (join_function(table->philo, create_value, i, true) == -1)
+// 		{
+// 			return (-1);
+// 		}
+// 		i++;
+// 	}
+// }
+
+bool	join_threads(t_table *table, int num_threads)
 {
-	if (!is_philo && pthread_join(philo->table->t_id_table, NULL) != 0)
+	int	j;
+
+	j = 0;
+	while (j < num_threads)
 	{
-		return (-1);
+		if (pthread_join(table->philo[j].t_id_philo, NULL) != 0)
+			return (error_msg("thread joining failed!"), false);
+		j++;
 	}
-	else if (is_philo && ret_value != 0)
-	{
-		while (position >= 1)
-		{
-			pthread_join(philo->t_id_philo[position - 1], NULL);
-			position--;
-		}
-		return (-1);
-	}
-	if (pthread_join(philo->t_id_philo[position], NULL) != 0)
-	{
-		return (-1);
-	}
+	if (num_threads == table->nb_philo)
+		return (true);
+	return (error_msg("thread joining failed!"), false);
 }
 
-int	init_thread(t_table *table)
+bool	init_threads(t_table *table)
 {
 	int			i;
-	int			create_value;
-	int			join_value;
 
 	i = 0;
-	table->start_time = get_time();
-	create_value = pthread_create(table->t_id_table, NULL, &table_observer, table);
-	//it is only one if it fails it can not join and do not need join
-	if (join_function(table->philo, create_value, 0, false) == -1)
+	pthread_mutex_lock(&table->lock);
+	while (i < table->nb_philo)
 	{
-		return (-1);
-	}
-	//table->start_time = get_time();
-	while(i < table->nb_philo)
-	{
-		create_value = pthread_create(table->philo[i].t_id_philo, NULL, &routine, &table->philo[i]);
-		if (join_function(table->philo, create_value, i, true) == -1)
-		{
-			return (-1);
-		}
+		if (pthread_create(&table->philo[i].t_id_philo, NULL, &routine, &table->philo[i]) != 0)
+			return (join_threads(table, i));
 		i++;
 	}
+	if (pthread_create(&table->t_id_table, NULL, &table_observer, table) != 0)
+		return (error_msg("thread creation failed!"), false);
+	table->start_time = get_time();
+	pthread_mutex_unlock(&table->lock);
+	if (pthread_join(table->t_id_table, NULL) != 0)
+		return (error_msg("thread joining failed!"), false);
+	return (join_threads(table, i));
 }
 
-int	one_philo(t_table *table)
+bool	one_philo(t_table *table)
 {
-	// take a fork
-	// wait for the die time
-	//die and end
 	table->start_time = get_time();
 	table->philo->time_be_dead = table->time_die + get_time();
-	//printf("before table observer time sleep:%lld\n", table->time_sleep);
 	if (pthread_create(&table->t_id_table, NULL, &table_observer, table) != 0)
 	{
-		return (-1);
+		return (error_msg("thread creation failed!"), false);
 	}
 	if (pthread_create(&table->philo->t_id_philo, NULL, &routine, &table->philo[0]) != 0)
 	{
-		return (-1);
+		return (error_msg("thread creation failed!"), false);
 	}
 	if (pthread_detach(table->philo->t_id_philo) != 0)
 	{
-		return (-1);
+		return (error_msg("thread detaching failed!"), false);
 	}
 	if (pthread_join(table->t_id_table, NULL) != 0)
 	{
-		return (-1);
+		return (error_msg("thread joining failed!"), false);
 	}
 	// while (table->dead == 0)
 	// {
 	// 	usleep(500);
 	// }
-	return (0);
+	return (true);
 }
 
-int	init_philo(t_table *table)
+bool	init_philo(t_table *table)
 {
 	int		i;
 
 	i = 0;
-	// philo->t_id_philo = malloc (table->nb_philo * sizeof(pthread_t));
-	// if (philo->t_id_philo == NULL)
-	// {
-	// 	return (-1);
-	// }
 	while (i < table->nb_philo)
 	{
 		table->philo[i].id = i + 1;
@@ -293,13 +327,16 @@ int	init_philo(t_table *table)
 		table->philo[i].eating = 0;
 		table->philo[i].right_fork = &table->forks[i % table->nb_philo];
 		table->philo[i].left_fork = &table->forks[(i + 1) % table->nb_philo];
-		pthread_mutex_init(&(table->philo[i]).lock, NULL);
+		if (pthread_mutex_init(&(table->philo[i]).lock, NULL) != 0)
+		{
+			return (error_msg("mutex initial failed!"), false);
+		}
 		i++;
 	}
-	return (0);
+	return (true);
 }
 
-int	init_table(char *argv[], t_table *table)
+bool	init_table(char *argv[], t_table *table)
 {
 	int	i;
 
@@ -316,19 +353,19 @@ int	init_table(char *argv[], t_table *table)
 		(table->time_eat < 0) || (table->time_sleep < 0) ||
 		(table->nb_meals && table->nb_meals < -1))
 	{
-		return (-1);
+		return (error_msg("invalid arguments!"), false);
 	}
 	table->dead = 0;
 	table->finished = 0;
 	table->philo = malloc(table->nb_philo * sizeof(t_philo));
 	if (table->philo == NULL)
 	{
-		return (-1);
+		return (error_msg("memory allocation failed!"), false);
 	}
 	table->forks = malloc(table->nb_philo * sizeof(pthread_mutex_t));
 	if (table->forks == NULL)
 	{
-		return (-1);
+		return (error_msg("memory allocation failed!"), false);
 	}
 	while (i < table->nb_philo)
 	{
@@ -337,36 +374,35 @@ int	init_table(char *argv[], t_table *table)
 	}
 	if (pthread_mutex_init(&table->lock, NULL) != 0)
 	{
-		return (-1);
+		return (error_msg("mutex initial failed!"), false);
 	}
 	if (pthread_mutex_init(&table->write, NULL) != 0)
 	{
-		return (-1);
+		return (error_msg("mutex initial failed!"), false);
 	}
-	return (0);
+	return (true);
 }
 
-int	init_all(int argc, char **argv, t_table *table)
+bool	init_all(int argc, char **argv, t_table *table)
 {
 	int	i;
 	
 	i = 1;
 	while (i < argc)
 	{
-		if (check_digit(argv[i]) == -1)
-			return (-1);
+		if (!check_digit(argv[i]))
+			return (false);
 		i++;
 	}
-	if (init_table(argv, table) == -1)
+	if (!init_table(argv, table))
 	{
-		return (-1);
+		return (false);
 	}
-	
-	if (init_philo(table) == -1)
+	if (!init_philo(table))
 	{
-		return (-1);
+		return (false);
 	}
-	return (0);
+	return (true);
 }
 
 int	main(int argc, char *argv[])
@@ -375,22 +411,20 @@ int	main(int argc, char *argv[])
 
 	if (argc != 5 && argc != 6)
 	{
-		printf("invalid number of arguments!\n");
-		return (-1);
+		return (error_msg("invalid number of arguments!"), 0);
 	}
-	if (init_all(argc, argv, &table) == -1)
+	if (!init_all(argc, argv, &table))
 	{
-		printf("invalid arguments!\n");
-		return (-1);
+		return (0);
 	}
 	if (table.nb_philo == 1)
 	{
 		return (one_philo(&table));
 	}
-	if (init_thread(&table) == -1)
-	{
-		return (-1);
-	}
+	// if (!init_threads(&table))
+	// {
+	// 	return (0);
+	// }
 	// // exit and clean
 	// clean_up();
 	return (0);
