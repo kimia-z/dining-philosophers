@@ -30,29 +30,33 @@ typedef struct s_philo
 	pthread_t		t_id_philo;
 	struct s_table	*table;
 	int				eat_count;
-	int				eating;
-	long long		time_be_dead;
-	// long long		start_thinking;
+	int				finished;
+	int				nb_meal;
+	long			life_time;
+	long			last_meal_time; //
 	pthread_mutex_t	lock;
+	// pthread_mutex_t	*output; //
 	pthread_mutex_t	*right_fork;
 	pthread_mutex_t	*left_fork;
+	//long		start_time;
 }	t_philo;
 
 typedef struct s_table
 {
 	pthread_t		t_id_table;
+	int				start_flag; //
 	int				nb_philo;
-	long long		time_die;
-	long long		time_eat;
-	long long		time_sleep;
+	long		time_die;
+	long		time_eat;
+	long		time_sleep;
 	int				nb_meals;
 	int				dead;
-	int				finished;
 	t_philo			*philo;
-	long long		start_time;
-	pthread_mutex_t	*forks; 
+	long		start_time;
+	pthread_mutex_t	*forks;
 	pthread_mutex_t	lock;
 	pthread_mutex_t	write;
+	pthread_mutex_t	dead_lock;
 }	t_table;
 
 
