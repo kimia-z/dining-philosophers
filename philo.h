@@ -56,7 +56,7 @@ typedef struct s_table
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	lock;
 	pthread_mutex_t	write;
-	pthread_mutex_t	dead_lock;
+	pthread_mutex_t	end;
 }	t_table;
 
 
