@@ -81,6 +81,11 @@ long	get_time()
 	return ((current_time.tv_sec * (long)1000) + (current_time.tv_usec / 1000));
 }
 
+int	calculate_time(long start_time)
+{
+	return (get_time() - start_time);
+}
+
 void	ft_usleep(int action, t_philo *philo)
 {
 	long	goal_time;
@@ -97,7 +102,7 @@ void	write_msg(t_philo *philo, char *msg)
 {
 	pthread_mutex_lock(&philo->table->write);
 	if (is_dead(philo) == false)
-		printf("%ld %d %s", get_time(), philo->id, msg);
+		printf("%d %d %s", calculate_time(philo->table->start_time), philo->id, msg);
 	pthread_mutex_unlock(&philo->table->write);
 }
 
@@ -113,12 +118,12 @@ void	take_forks(t_philo *philo)
 
 void	drop_forks(t_philo *philo)
 {
-	pthread_mutex_unlock(philo->left_fork);
-	printf("%ld %d drop left fork\n", get_time(), philo->id);
-	//write_msg(philo, "has droped a left fork\n");
 	pthread_mutex_unlock(philo->right_fork);
-	printf("%ld %d drop right fork\n", get_time(), philo->id);
+	//printf("%ld %d drop right fork\n", get_time(), philo->id);
 	//write_msg(philo, "has droped a right fork\n");
+	pthread_mutex_unlock(philo->left_fork);
+	//printf("%ld %d drop left fork\n", get_time(), philo->id);
+	//write_msg(philo, "has droped a left fork\n");
 }
 bool	is_starve(t_table *table)
 {
@@ -135,7 +140,8 @@ bool	is_starve(t_table *table)
 			pthread_mutex_lock(&table->end);
 			table->dead = 1;
 			pthread_mutex_unlock(&table->end);
-			printf("%ld %d died\n", get_time(), i + 1);
+			printf("%d %d died\n", calculate_time(table->start_time), i + 1);
+			//write_msg(table->philo, "died\n");
 			return (true);
 		}
 		else
@@ -326,6 +332,7 @@ bool	init_philo(t_table *table)
 		table->philo[i].table = table;
 		table->philo[i].life_time = table->time_die;
 		table->philo[i].last_meal_time = get_time();
+		// table->philo[i].start_time = get_time();
 		table->philo[i].eat_count = 0;
 		table->philo[i].finished = 0;
 		table->philo[i].nb_meal = table->nb_meals;

@@ -6,7 +6,7 @@ FLAGS = -Wall -Wextra -Werror -pthread
 
 HEADER = philo.h
 
-SANITIZER = -fsanitize=thread #-fsanitize=address 
+SANITIZER = -fsanitize=thread -flto -Ofast #-fsanitize=address
 
 all: $(NAME)
 
