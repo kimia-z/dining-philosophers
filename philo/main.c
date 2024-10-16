@@ -20,8 +20,9 @@ void	error_msg(char *msg)
 void	write_msg(t_philo *philo, char *msg)
 {
 	pthread_mutex_lock(&philo->table->write);
-	printf("%d %d %s",
-		calculate_time(philo->table->start_time), philo->id, msg);
+	if (is_dead(philo) == false)
+		printf("%d %d %s",
+			calculate_time(philo->table->start_time), philo->id, msg);
 	pthread_mutex_unlock(&philo->table->write);
 }
 

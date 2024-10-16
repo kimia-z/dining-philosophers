@@ -1,0 +1,17 @@
+0 1 has taken a right fork
+1 1 has taken a left fork
+1 1 is eating
+1 2 is thinking
+201 1 is sleeping
+201 2 has taken a right fork
+201 3 has taken a right fork
+201 2 has taken a left fork
+201 2 is eating
+401 2 is sleeping
+401 1 is thinking
+401 3 has taken a left fork
+401 1 has taken a right fork
+401 3 is eating
+601 3 is sleeping
+601 1 died
+601 1 has taken a left fork
