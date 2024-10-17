@@ -26,6 +26,20 @@ void	write_msg(t_philo *philo, char *msg)
 	pthread_mutex_unlock(&philo->table->write);
 }
 
+// void	write_msg2(t_philo *philo, char *msg)
+// {
+// 	int time;
+	
+// 	pthread_mutex_lock(&philo->table->write);
+// 	time = calculate_time(philo->table->start_time);
+// 	if (is_dead(philo) == false)
+// 	{
+// 		printf("%d %d %s", time, philo->id, msg);
+// 		printf("%d %d %s",time, philo->id, msg);	
+// 	}		
+// 	pthread_mutex_unlock(&philo->table->write);
+// }
+
 void	clear_data(t_table *table)
 {
 	if (table->forks)

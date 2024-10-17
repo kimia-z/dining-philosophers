@@ -1,617 +1,1413 @@
-0 1 has taken a right fork
-0 2 is thinking
-0 1 has taken a left fork
+0 1 has taken a fork
+0 1 has taken a fork
 0 1 is eating
-0 3 has taken a right fork
-0 3 has taken a left fork
+0 3 has taken a fork
+0 3 has taken a fork
 0 3 is eating
-0 4 is thinking
-0 5 has taken a right fork
-0 5 has taken a left fork
+0 5 has taken a fork
+0 5 has taken a fork
 0 5 is eating
-0 6 is thinking
-0 7 has taken a right fork
-0 7 has taken a left fork
+0 7 has taken a fork
+0 7 has taken a fork
 0 7 is eating
-0 8 is thinking
-0 9 has taken a right fork
-0 9 has taken a left fork
+0 9 has taken a fork
+0 9 has taken a fork
 0 9 is eating
-0 10 is thinking
-0 11 has taken a right fork
-0 11 has taken a left fork
-0 11 is eating
-0 12 is thinking
-0 13 has taken a right fork
-0 13 has taken a left fork
-0 13 is eating
-0 14 is thinking
-0 15 has taken a right fork
-0 15 has taken a left fork
-0 15 is eating
-0 16 is thinking
-1 17 has taken a right fork
-1 17 has taken a left fork
-1 18 is thinking
-1 17 is eating
-1 19 has taken a right fork
-1 19 has taken a left fork
-1 19 is eating
-1 20 is thinking
-1 21 has taken a right fork
-1 21 has taken a left fork
-1 22 is thinking
-1 21 is eating
-1 24 is thinking
-1 26 is thinking
-1 23 has taken a right fork
-1 23 has taken a left fork
-1 28 is thinking
-1 29 has taken a right fork
-1 39 has taken a right fork
-1 35 has taken a right fork
-1 35 has taken a left fork
-1 35 is eating
-1 40 is thinking
-1 33 has taken a right fork
-1 33 has taken a left fork
-1 33 is eating
-1 34 is thinking
-2 36 is thinking
-2 37 has taken a right fork
-2 37 has taken a left fork
-2 25 has taken a right fork
-2 25 has taken a left fork
-2 23 is eating
-2 29 has taken a left fork
-2 29 is eating
-2 46 is thinking
-2 25 is eating
-2 45 has taken a right fork
-2 48 is thinking
-2 32 is thinking
-2 39 has taken a left fork
-2 27 has taken a right fork
-2 50 is thinking
-2 27 has taken a left fork
-2 39 is eating
-2 27 is eating
-2 51 has taken a right fork
-2 51 has taken a left fork
-2 51 is eating
-2 52 is thinking
-2 53 has taken a right fork
-2 53 has taken a left fork
-2 53 is eating
-2 54 is thinking
-2 41 has taken a right fork
-2 41 has taken a left fork
-2 44 is thinking
-2 43 has taken a right fork
-2 43 has taken a left fork
-2 43 is eating
-2 38 is thinking
-2 37 is eating
-2 30 is thinking
-2 47 has taken a right fork
-2 47 has taken a left fork
-2 47 is eating
-2 57 has taken a right fork
-2 58 is thinking
-2 57 has taken a left fork
-2 57 is eating
-2 45 has taken a left fork
-2 45 is eating
-2 42 is thinking
-2 31 has taken a right fork
-2 31 has taken a left fork
-2 31 is eating
-2 62 is thinking
-2 56 is thinking
-2 55 has taken a right fork
-2 59 has taken a right fork
-2 59 has taken a left fork
-2 61 has taken a right fork
-2 63 has taken a right fork
-2 63 has taken a left fork
-2 63 is eating
-2 66 is thinking
-2 55 has taken a left fork
-2 55 is eating
-3 49 has taken a right fork
-3 86 is thinking
-3 41 is eating
-3 61 has taken a left fork
-3 61 is eating
-3 87 has taken a right fork
-3 87 has taken a left fork
-3 87 is eating
-3 77 has taken a right fork
-3 77 has taken a left fork
-3 77 is eating
-3 65 has taken a right fork
-3 65 has taken a left fork
-3 60 is thinking
-3 79 has taken a right fork
-3 68 is thinking
-3 70 is thinking
-3 85 has taken a right fork
-3 85 has taken a left fork
-3 85 is eating
-4 92 is thinking
-4 95 has taken a right fork
-4 95 has taken a left fork
-4 98 is thinking
-4 69 has taken a right fork
-4 69 has taken a left fork
-4 100 is thinking
-4 78 is thinking
-4 80 is thinking
-4 101 has taken a right fork
-4 101 has taken a left fork
-4 101 is eating
-4 71 has taken a right fork
-4 102 is thinking
-4 84 is thinking
-4 103 has taken a right fork
-4 103 has taken a left fork
-4 103 is eating
-4 104 is thinking
-5 106 is thinking
-5 65 is eating
-5 126 is thinking
-5 113 has taken a right fork
-5 113 has taken a left fork
-5 113 is eating
-5 90 is thinking
-5 79 has taken a left fork
-5 79 is eating
-5 128 is thinking
-5 129 has taken a right fork
-5 129 has taken a left fork
-5 129 is eating
-5 130 is thinking
-5 131 has taken a right fork
-5 131 has taken a left fork
-5 131 is eating
-5 132 is thinking
-5 133 has taken a right fork
-5 133 has taken a left fork
-5 133 is eating
-5 134 is thinking
-5 135 has taken a right fork
-6 135 has taken a left fork
-6 135 is eating
-6 136 is thinking
-6 138 is thinking
-6 139 has taken a right fork
-6 139 has taken a left fork
-6 139 is eating
-6 141 has taken a right fork
-6 141 has taken a left fork
-6 141 is eating
-124 142 is thinking
-206 94 is thinking
-206 75 has taken a right fork
-207 75 has taken a left fork
-207 96 is thinking
-207 91 has taken a right fork
-207 91 has taken a left fork
-207 91 is eating
-207 74 is thinking
-207 95 is eating
-207 47 is sleeping
-207 69 is eating
-207 48 has taken a right fork
-207 97 has taken a right fork
-207 86 has taken a right fork
-207 51 is sleeping
-207 82 is thinking
-207 58 has taken a right fork
-207 36 has taken a right fork
-207 108 is thinking
-207 110 is thinking
-207 139 is sleeping
-207 64 is thinking
-207 38 has taken a right fork
-207 116 is thinking
-207 25 is sleeping
-207 67 has taken a right fork
-207 67 has taken a left fork
-207 30 has taken a right fork
-207 67 is eating
-207 29 is sleeping
-207 83 has taken a right fork
-207 36 has taken a left fork
-207 36 is eating
-207 105 has taken a right fork
-207 105 has taken a left fork
-207 124 is thinking
-207 120 is thinking
-207 59 is eating
+1 11 has taken a fork
+1 11 has taken a fork
+1 11 is eating
+1 13 has taken a fork
+1 13 has taken a fork
+1 13 is eating
+1 15 has taken a fork
+1 15 has taken a fork
+1 15 is eating
+4 17 has taken a fork
+4 17 has taken a fork
+4 17 is eating
+4 62 has taken a fork
+4 62 has taken a fork
+4 62 is eating
+4 81 has taken a fork
+4 81 has taken a fork
+4 23 has taken a fork
+4 23 has taken a fork
+4 23 is eating
+4 27 has taken a fork
+4 27 has taken a fork
+4 27 is eating
+4 19 has taken a fork
+4 19 has taken a fork
+4 19 is eating
+4 74 has taken a fork
+4 74 has taken a fork
+4 74 is eating
+4 72 has taken a fork
+4 72 has taken a fork
+4 72 is eating
+4 35 has taken a fork
+4 35 has taken a fork
+4 35 is eating
+4 37 has taken a fork
+4 37 has taken a fork
+4 37 is eating
+4 87 has taken a fork
+4 39 has taken a fork
+4 39 has taken a fork
+4 39 is eating
+4 76 has taken a fork
+4 76 has taken a fork
+4 76 is eating
+4 89 has taken a fork
+4 89 has taken a fork
+4 89 is eating
+4 91 has taken a fork
+4 91 has taken a fork
+4 91 is eating
+4 70 has taken a fork
+4 70 has taken a fork
+4 70 is eating
+4 93 has taken a fork
+4 30 has taken a fork
+4 95 has taken a fork
+4 95 has taken a fork
+4 95 is eating
+6 30 has taken a fork
+6 47 has taken a fork
+6 47 has taken a fork
+6 47 is eating
+6 129 has taken a fork
+6 129 has taken a fork
+6 21 has taken a fork
+6 21 has taken a fork
+6 21 is eating
+6 43 has taken a fork
+6 97 has taken a fork
+6 43 has taken a fork
+6 97 has taken a fork
+6 43 is eating
+6 51 has taken a fork
+6 51 has taken a fork
+6 51 is eating
+6 55 has taken a fork
+6 55 has taken a fork
+6 55 is eating
+6 99 has taken a fork
+6 99 has taken a fork
+6 99 is eating
+6 120 has taken a fork
+6 120 has taken a fork
+6 120 is eating
+6 57 has taken a fork
+6 57 has taken a fork
+6 57 is eating
+6 103 has taken a fork
+6 103 has taken a fork
+6 103 is eating
+6 81 is eating
+6 107 has taken a fork
+6 107 has taken a fork
+6 107 is eating
+6 63 has taken a fork
+6 34 has taken a fork
+6 46 has taken a fork
+7 65 has taken a fork
+7 65 has taken a fork
+7 65 is eating
+7 67 has taken a fork
+7 67 has taken a fork
+7 67 is eating
+7 123 has taken a fork
+7 123 has taken a fork
+7 123 is eating
+7 125 has taken a fork
+7 125 has taken a fork
+7 125 is eating
+7 127 has taken a fork
+7 127 has taken a fork
+7 127 is eating
+7 106 has taken a fork
+7 116 has taken a fork
+7 116 has taken a fork
+7 116 is eating
+7 114 has taken a fork
+7 114 has taken a fork
+7 114 is eating
+7 112 has taken a fork
+7 112 has taken a fork
+7 112 is eating
+7 118 has taken a fork
+7 118 has taken a fork
+7 118 is eating
+7 83 has taken a fork
+7 83 has taken a fork
+7 83 is eating
+7 85 has taken a fork
+7 85 has taken a fork
+7 85 is eating
+7 25 has taken a fork
+7 25 has taken a fork
+7 25 is eating
+7 31 has taken a fork
+7 93 has taken a fork
+7 93 is eating
+7 30 is eating
+7 129 is eating
+7 97 is eating
+7 49 has taken a fork
+7 49 has taken a fork
+7 49 is eating
+7 42 has taken a fork
+7 53 has taken a fork
+7 53 has taken a fork
+7 53 is eating
+7 80 has taken a fork
+7 101 has taken a fork
+7 101 has taken a fork
+7 110 has taken a fork
+7 87 has taken a fork
+7 87 is eating
+7 78 has taken a fork
+7 78 has taken a fork
+7 78 is eating
+7 121 has taken a fork
+7 60 has taken a fork
+7 60 has taken a fork
+7 110 has taken a fork
+7 110 is eating
+7 101 is eating
+7 60 is eating
+200 3 is sleeping
+200 9 is sleeping
+200 4 has taken a fork
+200 10 has taken a fork
+200 7 is sleeping
+200 8 has taken a fork
+200 8 has taken a fork
+200 8 is eating
+200 1 is sleeping
+200 131 has taken a fork
+200 131 has taken a fork
+200 2 has taken a fork
+200 2 has taken a fork
+200 2 is eating
+200 131 is eating
+200 5 is sleeping
+200 6 has taken a fork
+200 6 has taken a fork
+200 6 is eating
+200 4 has taken a fork
+200 4 is eating
+201 13 is sleeping
+201 14 has taken a fork
+201 11 is sleeping
+201 10 has taken a fork
+201 10 is eating
+201 12 has taken a fork
+201 12 has taken a fork
+201 12 is eating
+201 15 is sleeping
+201 14 has taken a fork
+201 14 is eating
+201 16 has taken a fork
+204 35 is sleeping
+204 34 has taken a fork
+204 36 has taken a fork
+204 34 is eating
+204 39 is sleeping
+204 62 is sleeping
+204 61 has taken a fork
+204 72 is sleeping
+204 71 has taken a fork
+204 40 has taken a fork
+204 40 has taken a fork
+204 40 is eating
+204 73 has taken a fork
+204 95 is sleeping
+204 96 has taken a fork
+204 19 is sleeping
+204 20 has taken a fork
+204 36 has taken a fork
+204 63 has taken a fork
+204 76 is sleeping
+204 63 is eating
+204 75 has taken a fork
+204 75 has taken a fork
+204 75 is eating
+204 36 is eating
+204 73 has taken a fork
+204 73 is eating
+204 28 has taken a fork
+204 28 has taken a fork
+204 28 is eating
+204 38 has taken a fork
+204 38 has taken a fork
+204 38 is eating
+204 91 is sleeping
+204 74 is sleeping
+204 27 is sleeping
+204 70 is sleeping
+204 69 has taken a fork
+204 69 has taken a fork
+204 69 is eating
+204 71 has taken a fork
+204 71 is eating
+204 89 is sleeping
+204 90 has taken a fork
+204 90 has taken a fork
+204 90 is eating
+206 99 is sleeping
+206 100 has taken a fork
+206 81 is sleeping
+206 82 has taken a fork
+206 80 has taken a fork
+206 80 is eating
+206 47 is sleeping
+206 48 has taken a fork
+206 46 has taken a fork
+206 46 is eating
+206 17 is sleeping
+206 37 is sleeping
+206 18 has taken a fork
+206 18 has taken a fork
+206 18 is eating
+206 23 is sleeping
+206 107 is sleeping
+206 92 has taken a fork
+206 16 has taken a fork
+206 16 is eating
+206 108 has taken a fork
+206 108 has taken a fork
+206 108 is eating
+206 106 has taken a fork
+206 106 is eating
+206 43 is sleeping
+206 44 has taken a fork
+206 44 has taken a fork
+206 104 has taken a fork
+206 104 has taken a fork
+206 104 is eating
+206 44 is eating
+206 42 has taken a fork
+206 42 is eating
+206 24 has taken a fork
+206 103 is sleeping
+206 120 is sleeping
+206 121 has taken a fork
+206 121 is eating
+206 119 has taken a fork
+206 51 is sleeping
+206 52 has taken a fork
+206 21 is sleeping
+206 22 has taken a fork
+206 22 has taken a fork
+206 22 is eating
+206 20 has taken a fork
+206 20 is eating
+206 57 is sleeping
+206 58 has taken a fork
+206 58 has taken a fork
+206 58 is eating
+206 55 is sleeping
+206 56 has taken a fork
+206 56 has taken a fork
+206 56 is eating
+207 112 is sleeping
+207 111 has taken a fork
+207 87 is sleeping
+207 60 is sleeping
 207 65 is sleeping
-208 140 is thinking
-208 73 has taken a right fork
-208 72 is thinking
-208 144 is thinking
-208 146 is thinking
-208 148 is thinking
-208 149 has taken a right fork
-208 149 has taken a left fork
-208 149 is eating
-208 150 is thinking
-208 115 has taken a right fork
-208 115 has taken a left fork
-208 152 is thinking
-208 115 is eating
-208 154 is thinking
-208 155 has taken a right fork
-208 155 has taken a left fork
-208 155 is eating
-208 156 is thinking
-208 157 has taken a right fork
-208 157 has taken a left fork
-208 158 is thinking
-208 159 has taken a right fork
-208 159 has taken a left fork
-208 159 is eating
-208 160 is thinking
-208 161 has taken a right fork
-208 161 has taken a left fork
-208 162 is thinking
-208 89 has taken a right fork
-208 89 has taken a left fork
-208 89 is eating
-208 49 has taken a left fork
-208 49 is eating
-208 119 has taken a right fork
-208 119 has taken a left fork
-208 121 has taken a right fork
-208 121 has taken a left fork
-208 165 has taken a right fork
-208 165 has taken a left fork
-208 123 has taken a right fork
-208 123 has taken a left fork
-208 166 is thinking
-208 125 has taken a right fork
-208 125 has taken a left fork
-208 107 has taken a right fork
-208 107 has taken a left fork
-208 107 is eating
-208 109 has taken a right fork
-208 109 has taken a left fork
-208 168 is thinking
-208 127 has taken a right fork
-208 127 has taken a left fork
-208 137 has taken a right fork
-208 137 has taken a left fork
-208 170 is thinking
-208 171 has taken a right fork
-208 171 has taken a left fork
-208 171 is eating
-208 174 is thinking
-208 176 is thinking
-208 178 is thinking
-208 180 is thinking
-208 181 has taken a right fork
-208 182 is thinking
-208 183 has taken a right fork
-208 183 has taken a left fork
-208 184 is thinking
-208 143 has taken a right fork
-208 185 has taken a right fork
-208 185 has taken a left fork
-208 145 has taken a right fork
-208 145 has taken a left fork
-208 151 has taken a right fork
-208 151 has taken a left fork
-208 163 has taken a right fork
-209 167 has taken a right fork
-209 167 has taken a left fork
-209 111 has taken a right fork
-209 163 has taken a left fork
-209 163 is eating
-209 192 is thinking
-209 194 is thinking
-209 188 is thinking
-209 198 is thinking
-209 175 has taken a right fork
-209 175 has taken a left fork
-209 93 has taken a right fork
-209 175 is eating
-209 179 has taken a right fork
-209 193 has taken a right fork
-209 193 has taken a left fork
-209 193 is eating
-209 189 has taken a right fork
-209 189 has taken a left fork
-209 189 is eating
-209 197 has taken a right fork
-209 197 has taken a left fork
-209 197 is eating
-209 191 has taken a right fork
-209 191 has taken a left fork
-209 191 is eating
-209 130 has taken a right fork
-209 130 has taken a left fork
-209 80 has taken a right fork
-209 80 has taken a left fork
-209 80 is eating
-209 129 is sleeping
-209 79 is sleeping
-209 141 is sleeping
-268 75 is eating
-268 99 has taken a right fork
-268 99 has taken a left fork
-268 99 is eating
-268 85 is sleeping
-268 97 has taken a left fork
-268 97 is eating
-268 9 is sleeping
-268 10 has taken a right fork
-268 10 has taken a left fork
-268 10 is eating
-268 5 is sleeping
-268 101 is sleeping
-268 102 has taken a right fork
-268 102 has taken a left fork
-268 102 is eating
-268 78 has taken a right fork
-268 87 is sleeping
-268 31 is sleeping
-268 52 has taken a right fork
-268 21 is sleeping
-268 22 has taken a right fork
-268 86 has taken a left fork
-268 71 has taken a left fork
-268 57 is sleeping
-268 45 is sleeping
-269 8 has taken a right fork
-269 8 has taken a left fork
-269 8 is eating
-269 6 has taken a right fork
-269 6 has taken a left fork
-269 35 is sleeping
-269 18 has taken a right fork
-269 18 has taken a left fork
-269 18 is eating
-269 7 is sleeping
-269 131 is sleeping
-269 63 is sleeping
-353 132 has taken a right fork
-354 2 has taken a right fork
-354 2 has taken a left fork
-354 2 is eating
-354 17 is sleeping
-354 46 has taken a right fork
-354 46 has taken a left fork
-354 62 has taken a right fork
-354 15 is sleeping
-354 16 has taken a right fork
-354 104 has taken a right fork
-354 103 is sleeping
-354 12 has taken a right fork
-356 11 is sleeping
-356 41 is sleeping
-356 14 has taken a right fork
-356 14 has taken a left fork
-356 26 has taken a right fork
-356 26 has taken a left fork
-356 26 is eating
-356 14 is eating
-356 42 has taken a right fork
-356 42 has taken a left fork
-356 3 is sleeping
-356 32 has taken a right fork
-356 112 is thinking
-356 114 is thinking
-356 54 has taken a right fork
-356 54 has taken a left fork
-356 118 is thinking
-356 27 is sleeping
-356 76 is thinking
-356 30 has taken a left fork
-356 30 is eating
-356 53 is sleeping
-356 83 has taken a left fork
-356 37 is sleeping
-356 122 is thinking
-356 28 has taken a right fork
-356 28 has taken a left fork
-356 28 is eating
-356 88 is thinking
-356 56 has taken a right fork
-356 56 has taken a left fork
-356 136 has taken a right fork
-356 56 is eating
-356 133 is sleeping
-356 44 has taken a right fork
-363 43 is sleeping
-363 24 has taken a right fork
-363 24 has taken a left fork
-363 24 is eating
-363 23 is sleeping
-363 1 is sleeping
-363 40 has taken a right fork
-363 40 has taken a left fork
-363 40 is eating
-363 34 has taken a right fork
-363 34 has taken a left fork
-363 55 is sleeping
-363 34 is eating
-363 33 is sleeping
-363 153 has taken a right fork
-363 153 has taken a left fork
-363 134 has taken a right fork
-363 164 is thinking
-363 119 is eating
-363 121 is eating
-363 165 is eating
-363 123 is eating
-363 125 is eating
-363 109 is eating
-363 169 has taken a right fork
-363 169 has taken a left fork
-363 169 is eating
-363 127 is eating
-363 137 is eating
-363 172 is thinking
-363 173 has taken a right fork
-363 181 has taken a left fork
-363 181 is eating
-363 186 is thinking
-363 185 is eating
-363 147 has taken a right fork
-363 145 is eating
-364 143 has taken a left fork
-364 117 has taken a right fork
-364 117 has taken a left fork
-364 151 is eating
-364 117 is eating
-364 111 has taken a left fork
-364 111 is eating
-364 190 is thinking
-364 196 is thinking
-364 177 has taken a right fork
-364 143 is eating
-364 179 has taken a left fork
-364 195 has taken a right fork
-364 195 has taken a left fork
-364 195 is eating
-364 187 has taken a right fork
-364 130 is eating
-433 187 has taken a left fork
-433 19 is sleeping
-451 20 has taken a right fork
-451 20 has taken a left fork
-451 20 is eating
-451 81 has taken a right fork
-451 81 has taken a left fork
-451 77 is sleeping
-451 52 has taken a left fork
-451 52 is eating
-451 86 is eating
-451 71 is eating
-451 6 is eating
-451 132 has taken a left fork
-451 61 is sleeping
-452 46 is eating
-452 140 has taken a right fork
-452 62 has taken a left fork
-452 16 has taken a left fork
-452 12 has taken a left fork
-452 64 has taken a right fork
-452 64 has taken a left fork
-452 4 has taken a right fork
-452 4 has taken a left fork
-452 4 is eating
-452 13 is sleeping
-452 42 is eating
-452 54 is eating
-452 32 has taken a left fork
-452 83 is eating
-452 105 is eating
-452 66 has taken a right fork
-452 66 has taken a left fork
-452 44 has taken a left fork
-452 113 is sleeping
-452 39 is sleeping
-452 38 has taken a left fork
-452 38 is eating
-452 135 is sleeping
-452 157 is eating
-452 153 is eating
-452 161 is eating
-452 134 has taken a left fork
-453 173 has taken a left fork
-453 173 is eating
-453 183 is eating
-453 147 has taken a left fork
-453 147 is eating
-453 93 has taken a left fork
-453 177 has taken a left fork
-453 179 is eating
-453 177 is eating
-453 187 is eating
-453 91 is sleeping
-453 198 has taken a right fork
-453 198 has taken a left fork
-453 198 is eating
-453 49 is sleeping
-453 65 is thinking
-453 50 has taken a right fork
-453 50 has taken a left fork
-453 50 is eating
-477 107 is sleeping
-477 48 has taken a left fork
-478 159 is sleeping
-478 160 has taken a right fork
-478 18 is sleeping
-478 193 is sleeping
-478 79 is thinking
-478 155 is sleeping
-478 156 has taken a right fork
-478 139 is thinking
-478 141 is thinking
-478 47 is thinking
-478 191 is sleeping
-478 192 has taken a right fork
-478 192 has taken a left fork
-478 192 is eating
-478 60 has taken a right fork
-478 60 has taken a left fork
-478 60 is eating
-478 68 has taken a right fork
-478 68 has taken a left fork
-478 68 is eating
-478 80 is sleeping
-478 92 has taken a right fork
-478 197 is sleeping
-479 129 is thinking
-479 89 is sleeping
-479 63 is thinking
-479 102 is sleeping
-479 90 has taken a right fork
-479 175 is sleeping
-479 176 has taken a right fork
-479 58 has taken a left fork
-479 58 is eating
-479 67 is sleeping
-479 81 is eating
-479 78 has taken a left fork
-479 78 is eating
-479 108 has taken a right fork
-479 132 is eating
-479 189 is sleeping
-479 116 has taken a right fork
-479 115 is sleeping
-479 150 has taken a right fork
-479 149 is sleeping
-479 25 is thinking
-479 96 has taken a right fork
-479 29 is thinking
-479 171 is sleeping
-479 95 is sleeping
-479 140 has taken a left fork
-479 16 is eating
-479 62 is eating
-479 140 is eating
-479 64 is eating
-479 73 has taken a left fork
-479 73 is eating
-479 32 is eating
-479 44 is eating
-479 134 is eating
-479 167 is eating
-479 142 has taken a right fork
-479 93 is eating
-479 57 is thinking
-479 9 is thinking
-479 48 is eating
-563 9 has taken a right fork
-563 190 has taken a right fork
-563 190 has taken a left fork
-563 114 has taken a right fork
-563 9 has taken a left fork
-563 75 is sleeping
-564 142 died
+207 66 has taken a fork
+207 88 has taken a fork
+207 88 has taken a fork
+207 88 is eating
+207 61 has taken a fork
+207 61 is eating
+207 59 has taken a fork
+207 110 is sleeping
+207 111 has taken a fork
+207 111 is eating
+207 49 is sleeping
+207 114 is sleeping
+207 109 has taken a fork
+207 50 has taken a fork
+207 50 has taken a fork
+207 50 is eating
+207 48 has taken a fork
+207 48 is eating
+207 78 is sleeping
+207 113 has taken a fork
+207 113 has taken a fork
+207 113 is eating
+207 25 is sleeping
+207 24 has taken a fork
+207 24 is eating
+207 123 is sleeping
+207 96 has taken a fork
+207 96 is eating
+207 77 has taken a fork
+207 77 has taken a fork
+207 77 is eating
+207 26 has taken a fork
+207 26 has taken a fork
+207 26 is eating
+207 98 has taken a fork
+207 98 has taken a fork
+207 98 is eating
+207 124 has taken a fork
+207 125 is sleeping
+207 97 is sleeping
+207 126 has taken a fork
+207 124 has taken a fork
+207 124 is eating
+207 93 is sleeping
+207 94 has taken a fork
+207 94 has taken a fork
+207 94 is eating
+207 92 has taken a fork
+207 92 is eating
+207 127 is sleeping
+207 128 has taken a fork
+207 126 has taken a fork
+207 126 is eating
+207 118 is sleeping
+207 83 is sleeping
+207 84 has taken a fork
+207 117 has taken a fork
+207 82 has taken a fork
+207 119 has taken a fork
+207 82 is eating
+207 85 is sleeping
+207 86 has taken a fork
+207 86 has taken a fork
+207 86 is eating
+207 84 has taken a fork
+207 84 is eating
+207 119 is eating
+207 129 is sleeping
+207 130 has taken a fork
+207 128 has taken a fork
+207 128 is eating
+208 53 is sleeping
+208 54 has taken a fork
+208 54 has taken a fork
+208 54 is eating
+208 52 has taken a fork
+208 52 is eating
+208 116 is sleeping
+208 115 has taken a                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  fork
+1410 170 has taken a fork
+1410 170 is eating
+1410 133 is sleeping
+1410 145 is sleeping
+1410 146 has taken a fork
+1410 146 has taken a fork
+1410 146 is eating
+1410 173 is sleeping
+1410 172 has taken a fork
+1410 172 is eating
+1410 132 has taken a fork
+1410 132 has taken a fork
+1410 132 is eating
+1410 153 is sleeping
+1410 158 has taken a fork
+1410 158 has taken a fork
+1410 158 is eating
+1410 160 has taken a fork
+1410 154 has taken a fork
+1410 154 has taken a fork
+1410 154 is eating
+1410 186 has taken a fork
+1410 186 has taken a fork
+1410 186 is eating
+1410 183 is sleeping
+1410 184 has taken a fork
+1410 184 has taken a fork
+1410 184 is eating
+1411 114 has taken a fork
+1411 114 has taken a fork
+1411 114 is eating
+1411 189 is sleeping
+1411 177 is sleeping
+1411 167 is sleeping
+1411 193 is sleeping
+1411 152 has taken a fork
+1411 194 has taken a fork
+1411 152 has taken a fork
+1411 152 is eating
+1411 181 is sleeping
+1411 180 has taken a fork
+1411 180 is eating
+1411 182 has taken a fork
+1411 182 has taken a fork
+1411 182 is eating
+1411 191 is sleeping
+1411 165 is sleeping
+1411 166 has taken a fork
+1411 166 has taken a fork
+1411 166 is eating
+1411 149 is sleeping
+1411 178 has taken a fork
+1411 178 has taken a fork
+1411 178 is eating
+1411 175 is sleeping
+1411 174 has taken a fork
+1411 174 has taken a fork
+1411 174 is eating
+1411 144 has taken a fork
+1411 144 has taken a fork
+1411 144 is eating
+1411 192 has taken a fork
+1411 192 has taken a fork
+1411 192 is eating
+1411 176 has taken a fork
+1411 176 has taken a fork
+1411 188 has taken a fork
+1411 176 is eating
+1411 188 has taken a fork
+1411 190 has taken a fork
+1411 190 has taken a fork
+1411 190 is eating
+1411 195 is sleeping
+1411 196 has taken a fork
+1411 196 has taken a fork
+1411 196 is eating
+1411 194 has taken a fork
+1411 194 is eating
+1411 156 has taken a fork
+1411 156 has taken a fork
+1411 156 is eating
+1411 188 is eating
+1411 161 is sleeping
+1411 160 has taken a fork
+1411 162 has taken a fork
+1411 162 has taken a fork
+1411 162 is eating
+1411 160 is eating
+1412 54 has taken a fork
+1412 54 has taken a fork
+1412 54 is eating
+1412 104 is thinking
+1412 136 has taken a fork
+1412 136 has taken a fork
+1412 136 is eating
+1412 84 has taken a fork
+1412 84 has taken a fork
+1412 84 is eating
+1412 164 has taken a fork
+1412 164 has taken a fork
+1412 164 is eating
+1412 102 is sleeping
+1412 103 has taken a fork
+1412 103 is eating
+1412 51 is sleeping
+1412 52 has taken a fork
+1412 52 has taken a fork
+1412 52 is eating
+1412 150 has taken a fork
+1412 150 has taken a fork
+1412 150 is eating
+1412 79 is sleeping
+1412 134 has taken a fork
+1412 134 has taken a fork
+1412 134 is eating
+1412 105 has taken a fork
+1412 105 has taken a fork
+1412 105 is eating
+1412 50 has taken a fork
+1412 43 is sleeping
+1412 7 is thinking
+1412 50 has taken a fork
+1412 50 is eating
+1412 101 is thinking
+1412 44 is thinking
+1412 41 is thinking
+1412 124 has taken a fork
+1412 124 has taken a fork
+1412 124 is eating
+1412 80 has taken a fork
+1412 80 has taken a fork
+1412 80 is eating
+1412 78 has taken a fork
+1412 78 has taken a fork
+1412 78 is eating
+1412 42 has taken a fork
+1412 42 has taken a fork
+1412 42 is eating
+1413 94 has taken a fork
+1413 168 has taken a fork
+1413 168 has taken a fork
+1413 94 has taken a fork
+1413 94 is eating
+1413 168 is eating
+1413 148 has taken a fork
+1413 148 has taken a fork
+1413 148 is eating
+1601 14 is sleeping
+1601 16 is sleeping
+1601 15 is thinking
+1601 2 is sleeping
+1601 17 is thinking
+1601 11 is thinking
+1601 26 is sleeping
+1601 25 is thinking
+1601 19 is thinking
+1601 13 is thinking
+1601 4 is sleeping
+1601 5 is thinking
+1601 24 is sleeping
+1601 12 is sleeping
+1601 27 is thinking
+1601 3 is thinking
+1601 1 is thinking
+1602 9 is thinking
+1602 10 is sleeping
+1602 30 is sleeping
+1602 22 is sleeping
+1602 29 is thinking
+1602 33 is thinking
+1602 8 is sleeping
+1602 20 is sleeping
+1602 21 is thinking
+1602 18 is sleeping
+1602 31 is thinking
+1603 49 is thinking
+1603 58 is sleeping
+1603 47 is sleeping
+1603 48 has taken a fork
+1603 48 has taken a fork
+1603 48 is eating
+1603 46 is thinking
+1603 35 is thinking
+1603 57 is thinking
+1603 59 is thinking
+1604 70 is sleeping
+1604 71 is thinking
+1604 83 is thinking
+1604 61 is thinking
+1604 65 is thinking
+1604 85 is thinking
+1604 75 is thinking
+1604 72 is sleeping
+1604 87 is thinking
+1604 45 is sleeping
+1604 28 is sleeping
+1604 69 is thinking
+1604 23 is thinking
+1604 53 is thinking
+1605 32 is sleeping
+1605 39 is thinking
+1605 60 is sleeping
+1605 64 is sleeping
+1605 77 is thinking
+1605 97 is thinking
+1605 73 is thinking
+1605 67 is thinking
+1605 62 is sleeping
+1605 55 is thinking
+1605 36 is sleeping
+1605 91 is thinking
+1605 38 is sleeping
+1605 98 is sleeping
+1605 76 is sleeping
+1605 63 is thinking
+1605 74 is sleeping
+1605 66 is sleeping
+1605 88 is sleeping
+1605 99 is thinking
+1605 89 is thinking
+1606 115 is thinking
+1606 123 is thinking
+1606 100 is sleeping
+1606 92 is sleeping
+1606 106 is thinking
+1606 116 is sleeping
+1606 127 is thinking
+1606 90 is sleeping
+1606 126 is sleeping
+1606 125 is thinking
+1606 129 is thinking
+1606 108 is thinking
+1606 68 is sleeping
+1606 117 is thinking
+1606 6 is sleeping
+1606 118 is sleeping
+1606 107 is sleeping
+1606 119 is thinking
+1606 86 is sleeping
+1606 40 is sleeping
+1607 131 is thinking
+1607 110 is thinking
+1607 34 is sleeping
+1607 109 is sleeping
+1607 122 is sleeping
+1607 81 is thinking
+1607 147 is thinking
+1607 82 is sleeping
+1607 121 is thinking
+1607 111 is sleeping
+1607 112 has taken a fork
+1607 112 has taken a fork
+1607 112 is eating
+1607 37 has taken a fork
+1607 37 has taken a fork
+1607 37 is eating
+1607 120 is sleeping
+1608 139 is thinking
+1608 93 is thinking
+1608 96 is sleeping
+1608 113 is thinking
+1608 56 is sleeping
+1608 95 is thinking
+1609 143 is thinking
+1609 137 is thinking
+1609 138 is sleeping
+1609 135 is thinking
+1609 142 is sleeping
+1609 140 is sleeping
+1609 169 is thinking
+1609 141 is thinking
+1610 153 is thinking
+1610 197 is thinking
+1610 158 is sleeping
+1610 187 is thinking
+1610 133 is thinking
+1610 172 is sleeping
+1610 146 is sleeping
+1610 184 is sleeping
+1610 159 is thinking
+1610 130 is sleeping
+1610 132 is sleeping
+1610 155 is thinking
+1610 145 is thinking
+1610 183 is thinking
+1610 173 is thinking
+1610 170 is sleeping
+1610 154 is sleeping
+1610 151 is thinking
+1610 185 is thinking
+1610 163 is thinking
+1610 157 is thinking
+1610 171 is thinking
+1610 179 is thinking
+1611 190 is sleeping
+1611 186 is sleeping
+1611 176 is sleeping
+1611 160 is sleeping
+1611 180 is sleeping
+1611 144 is sleeping
+1611 165 is thinking
+1611 192 is sleeping
+1611 161 is thinking
+1611 196 is sleeping
+1611 166 is sleeping
+1611 178 is sleeping
+1611 156 is sleeping
+1611 181 is thinking
+1611 114 is sleeping
+1611 194 is sleeping
+1611 175 is thinking
+1611 174 is sleeping
+1611 188 is sleeping
+1611 149 is thinking
+1611 167 is thinking
+1611 191 is thinking
+1611 189 is thinking
+1611 177 is thinking
+1611 152 is sleeping
+1611 182 is sleeping
+1611 195 is thinking
+1611 162 is sleeping
+1611 198 is sleeping
+1611 193 is thinking
+1612 124 is sleeping
+1612 150 is sleeping
+1612 43 is thinking
+1612 42 is sleeping
+1612 164 is sleeping
+1612 105 is sleeping
+1612 78 is sleeping
+1612 7 has taken a fork
+1612 7 has taken a fork
+1612 7 is eating
+1612 50 is sleeping
+1612 54 is sleeping
+1612 134 is sleeping
+1612 79 is thinking
+1612 41 has taken a fork
+1612 41 has taken a fork
+1612 41 is eating
+1612 136 is sleeping
+1612 103 is sleeping
+1612 104 has taken a fork
+1612 104 has taken a fork
+1612 104 is eating
+1612 52 is sleeping
+1612 102 is thinking
+1612 44 has taken a fork
+1612 44 has taken a fork
+1612 44 is eating
+1612 51 is thinking
+1612 84 is sleeping
+1612 101 has taken a fork
+1612 101 has taken a fork
+1612 101 is eating
+1612 128 is sleeping
+1613 94 is sleeping
+1613 148 is sleeping
+1613 168 is sleeping
+1613 80 is sleeping
+1801 26 is thinking
+1801 1 has taken a fork
+1801 1 has taken a fork
+1801 1 is eating
+1801 14 is thinking
+1801 27 has taken a fork
+1801 27 has taken a fork
+1801 27 is eating
+1801 25 has taken a fork
+1801 25 has taken a fork
+1801 25 is eating
+1801 19 has taken a fork
+1801 19 has taken a fork
+1801 19 is eating
+1801 4 is thinking
+1801 17 has taken a fork
+1801 17 has taken a fork
+1801 17 is eating
+1801 5 has taken a fork
+1801 5 has taken a fork
+1801 5 is eating
+1801 24 is thinking
+1801 3 has taken a fork
+1801 3 has taken a fork
+1801 3 is eating
+1801 12 is thinking
+1801 13 has taken a fork
+1801 13 has taken a fork
+1801 13 is eating
+1801 2 is thinking
+1802 10 is thinking
+1802 8 is thinking
+1802 15 has taken a fork
+1802 15 has taken a fork
+1802 15 is eating
+1802 22 is thinking
+1802 31 has taken a fork
+1802 31 has taken a fork
+1802 31 is eating
+1802 16 is thinking
+1802 9 has taken a fork
+1802 9 has taken a fork
+1802 9 is eating
+1802 18 is thinking
+1802 21 has taken a fork
+1802 21 has taken a fork
+1802 30 is thinking
+1802 21 is eating
+1802 33 has taken a fork
+1802 33 has taken a fork
+1802 33 is eating
+1802 29 has taken a fork
+1802 29 has taken a fork
+1802 29 is eating
+1803 49 has taken a fork
+1803 46 has taken a fork
+1803 46 has taken a fork
+1803 46 is eating
+1803 35 has taken a fork
+1803 35 has taken a fork
+1803 35 is eating
+1803 47 is thinking
+1803 48 is sleeping
+1803 57 has taken a fork
+1803 49 has taken a fork
+1803 49 is eating
+1803 57 has taken a fork
+1803 57 is eating
+1803 59 has taken a fork
+1803 59 has taken a fork
+1803 59 is eating
+1804 11 has taken a fork
+1804 11 has taken a fork
+1804 11 is eating
+1804 58 is thinking
+1804 75 has taken a fork
+1804 75 has taken a fork
+1804 75 is eating
+1804 65 has taken a fork
+1804 65 has taken a fork
+1804 65 is eating
+1804 61 has taken a fork
+1804 61 has taken a fork
+1804 61 is eating
+1804 87 has taken a fork
+1804 87 has taken a fork
+1804 87 is eating
+1804 85 has taken a fork
+1804 85 has taken a fork
+1804 85 is eating
+1804 83 has taken a fork
+1804 72 is thinking
+1804 83 has taken a fork
+1804 83 is eating
+1804 45 is thinking
+1804 23 has taken a fork
+1804 23 has taken a fork
+1804 23 is eating
+1804 71 has taken a fork
+1804 71 has taken a fork
+1804 71 is eating
+1804 70 is thinking
+1804 28 is thinking
+1804 53 has taken a fork
+1804 53 has taken a fork
+1804 53 is eating
+1805 77 has taken a fork
+1805 77 has taken a fork
+1805 77 is eating
+1805 36 is thinking
+1805 63 has taken a fork
+1805 63 has taken a fork
+1805 63 is eating
+1805 60 is thinking
+1805 97 has taken a fork
+1805 97 has taken a fork
+1805 97 is eating
+1805 67 has taken a fork
+1805 67 has taken a fork
+1805 67 is eating
+1805 73 has taken a fork
+1805 73 has taken a fork
+1805 73 is eating
+1805 39 has taken a fork
+1805 39 has taken a fork
+1805 39 is eating
+1805 38 is thinking
+1805 74 is thinking
+1805 89 has taken a fork
+1805 89 has taken a fork
+1805 89 is eating
+1805 88 is thinking
+1805 91 has taken a fork
+1805 91 has taken a fork
+1805 91 is eating
+1805 62 is thinking
+1805 64 is thinking
+1805 99 has taken a fork
+1805 99 has taken a fork
+1805 99 is eating
+1806 86 is thinking
+1806 68 is thinking
+1806 116 is thinking
+1806 90 is thinking
+1806 98 is thinking
+1806 119 has taken a fork
+1806 119 has taken a fork
+1806 119 is eating
+1806 40 is thinking
+1806 117 has taken a fork
+1806 117 has taken a fork
+1806 117 is eating
+1806 118 is thinking
+1806 107 is thinking
+1806 100 is thinking
+1806 92 is thinking
+1806 127 has taken a fork
+1806 127 has taken a fork
+1806 125 has taken a fork
+1806 125 has taken a fork
+1806 125 is eating
+1806 123 has taken a fork
+1806 123 has taken a fork
+1806 123 is eating
+1806 108 has taken a fork
+1806 108 has taken a fork
+1806 108 is eating
+1806 129 has taken a fork
+1806 129 has taken a fork
+1806 129 is eating
+1806 6 is thinking
+1806 127 is eating
+1806 115 has taken a fork
+1806 115 has taken a fork
+1806 115 is eating
+1806 126 is thinking
+1807 106 has taken a fork
+1807 106 has taken a fork
+1807 106 is eating
+1807 69 has taken a fork
+1807 69 has taken a fork
+1807 69 is eating
+1807 109 is thinking
+1807 20 is thinking
+1807 34 is thinking
+1807 112 is sleeping
+1807 37 is sleeping
+1807 147 has taken a fork
+1807 147 has taken a fork
+1807 147 is eating
+1807 111 is thinking
+1807 81 has taken a fork
+1807 81 has taken a fork
+1807 81 is eating
+1807 120 is thinking
+1807 82 is thinking
+1807 32 is thinking
+1807 121 has taken a fork
+1807 121 has taken a fork
+1807 121 is eating
+1808 110 has taken a fork
+1808 110 has taken a fork
+1808 110 is eating
+1808 96 is thinking
+1808 139 has taken a fork
+1808 139 has taken a fork
+1808 139 is eating
+1808 56 is thinking
+1808 113 has taken a fork
+1808 113 has taken a fork
+1808 113 is eating
+1808 95 has taken a fork
+1808 95 has taken a fork
+1808 95 is eating
+1808 66 is thinking
+1808 131 has taken a fork
+1808 131 has taken a fork
+1808 131 is eating
+1809 169 has taken a fork
+1809 169 has taken a fork
+1809 169 is eating
+1809 55 has taken a fork
+1809 55 has taken a fork
+1809 55 is eating
+1809 140 is thinking
+1809 138 is thinking
+1809 142 is thinking
+1809 141 has taken a fork
+1809 141 has taken a fork
+1809 141 is eating
+1809 76 is thinking
+1809 143 has taken a fork
+1809 143 has taken a fork
+1809 143 is eating
+1809 137 has taken a fork
+1809 137 has taken a fork
+1809 137 is eating
+1809 135 has taken a fork
+1809 135 has taken a fork
+1809 135 is eating
+1810 157 has taken a fork
+1810 159 has taken a fork
+1810 159 has taken a fork
+1810 159 is eating
+1810 179 has taken a fork
+1810 179 has taken a fork
+1810 179 is eating
+1810 171 has taken a fork
+1810 171 has taken a fork
+1810 171 is eating
+1810 173 has taken a fork
+1810 173 has taken a fork
+1810 185 has taken a fork
+1810 185 has taken a fork
+1810 185 is eating
+1810 173 is eating
+1810 133 has taken a fork
+1810 133 has taken a fork
+1810 133 is eating
+1810 145 has taken a fork
+1810 145 has taken a fork
+1810 145 is eating
+1810 187 has taken a fork
+1810 187 has taken a fork
+1810 187 is eating
+1810 184 is thinking
+1810 146 is thinking
+1810 158 is thinking
+1810 170 is thinking
+1810 197 has taken a fork
+1810 197 has taken a fork
+1810 197 is eating
+1810 154 is thinking
+1810 172 is thinking
+1810 151 has taken a fork
+1810 151 has taken a fork
+1810 151 is eating
+1810 183 has taken a fork
+1810 183 has taken a fork
+1810 183 is eating
+1810 132 is thinking
+1810 163 has taken a fork
+1810 163 has taken a fork
+1810 163 is eating
+1810 157 has taken a fork
+1810 157 is eating
+1810 122 is thinking
+1811 156 is thinking
+1811 114 is thinking
+1811 166 is thinking
+1811 192 is thinking
+1811 174 is thinking
+1811 189 has taken a fork
+1811 189 has taken a fork
+1811 189 is eating
+1811 181 has taken a fork
+1811 181 has taken a fork
+1811 181 is eating
+1811 182 is thinking
+1811 178 is thinking
+1811 180 is thinking
+1811 165 has taken a fork
+1811 177 has taken a fork
+1811 177 has taken a fork
+1811 177 is eating
+1811 175 has taken a fork
+1811 165 has taken a fork
+1811 165 is eating
+1811 190 is thinking
+1811 175 has taken a fork
+1811 175 is eating
+1811 167 has taken a fork
+1811 167 has taken a fork
+1811 162 is thinking
+1811 193 has taken a fork
+1811 193 has taken a fork
+1811 193 is eating
+1811 196 is thinking
+1811 167 is eating
+1811 160 is thinking
+1811 191 has taken a fork
+1811 191 has taken a fork
+1811 191 is eating
+1811 149 has taken a fork
+1811 149 has taken a fork
+1811 149 is eating
+1811 161 has taken a fork
+1811 161 has taken a fork
+1811 161 is eating
+1811 176 is thinking
+1811 144 is thinking
+1811 152 is thinking
+1811 194 is thinking
+1811 93 has taken a fork
+1811 93 has taken a fork
+1811 93 is eating
+1811 195 has taken a fork
+1811 195 has taken a fork
+1811 195 is eating
+1811 130 is thinking
+1812 103 is thinking
+1812 52 is thinking
+1812 104 is sleeping
+1812 41 is sleeping
+1812 42 is thinking
+1812 150 is thinking
+1812 136 is thinking
+1812 101 is sleeping
+1812 102 has taken a fork
+1812 102 has taken a fork
+1812 102 is eating
+1812 7 is sleeping
+1812 105 is thinking
+1812 79 has taken a fork
+1812 79 has taken a fork
+1812 79 is eating
+1812 78 is thinking
+1812 54 is thinking
+1812 84 is thinking
+1812 128 is thinking
+1812 124 is thinking
+1812 164 is thinking
+1812 51 has taken a fork
+1812 51 has taken a fork
+1812 51 is eating
+1812 50 is thinking
+1812 188 is thinking
+1812 153 has taken a fork
+1812 153 has taken a fork
+1812 153 is eating
+1812 155 has taken a fork
+1812 155 has taken a fork
+1813 155 is eating
+1813 198 is thinking
+1813 168 is thinking
+1813 94 is thinking
+1813 148 is thinking
+1813 80 is thinking
+1813 186 is thinking
+1813 44 is sleeping
+1813 43 has taken a fork
+1813 43 has taken a fork
+1813 43 is eating
+1814 134 is thinking
+2001 19 is sleeping
+2001 17 is sleeping
+2001 25 is sleeping
+2001 3 is sleeping
+2001 4 has taken a fork
+2001 26 has taken a fork
+2001 5 is sleeping
+2001 4 has taken a fork
+2001 4 is eating
+2001 13 is sleeping
+2001 27 is sleeping
+2001 26 has taken a fork
+2001 26 is eating
+2002 33 is sleeping
+2002 9 is sleeping
+2002 10 has taken a fork
+2002 29 is sleeping
+2002 30 has taken a fork
+2002 8 has taken a fork
+2002 8 has taken a fork
+2002 8 is eating
+2002 30 has taken a fork
+2002 30 is eating
+2002 21 is sleeping
+2002 15 is sleeping
+2002 18 has taken a fork
+2002 18 has taken a fork
+2002 18 is eating
+2002 31 is sleeping
+2002 16 has taken a fork
+2002 16 has taken a fork
+2002 16 is eating
+2002 22 has taken a fork
+2003 14 has taken a fork
+2003 14 has taken a fork
+2003 14 is eating
+2003 57 is sleeping
+2003 46 is sleeping
+2003 48 is thinking
+2003 49 is sleeping
+2003 47 has taken a fork
+2003 47 has taken a fork
+2003 47 is eating
+2003 59 is sleeping
+2003 35 is sleeping
+2004 61 is sleeping
+2004 28 has taken a fork
+2004 28 has taken a fork
+2004 28 is eating
+2004 65 is sleeping
+2004 85 is sleeping
+2004 58 has taken a fork
+2004 58 has taken a fork
+2004 58 is eating
+2004 87 is sleeping
+2004 72 has taken a fork
+2004 71 is sleeping
+2004 53 is sleeping
+2004 83 is sleeping
+2004 75 is sleeping
+2004 45 has taken a fork
+2004 45 has taken a fork
+2004 45 is eating
+2004 23 is sleeping
+2004 24 has taken a fork
+2004 24 has taken a fork
+2004 24 is eating
+2004 22 has taken a fork
+2004 22 is eating
+2005 62 has taken a fork
+2005 89 is sleeping
+2005 88 has taken a fork
+2005 88 has taken a fork
+2005 88 is eating
+2005 99 is sleeping
+2005 63 is sleeping
+2005 62 has taken a fork
+2005 62 is eating
+2005 38 has taken a fork
+2005 36 has taken a fork
+2005 36 has taken a fork
+2005 36 is eating
+2005 60 has taken a fork
+2005 97 is sleeping
+2005 60 has taken a fork
+2005 60 is eating
+2005 73 is sleeping
+2005 72 has taken a fork
+2005 72 is eating
+2005 64 has taken a fork
+2005 64 has taken a fork
+2005 64 is eating
+2005 39 is sleeping
+2005 38 has taken a fork
+2005 38 is eating
+2005 77 is sleeping
+2005 67 is sleeping
+2005 74 has taken a fork
+2005 74 has taken a fork
+2005 74 is eating
+2005 91 is sleeping
+2006 90 has taken a fork
+2006 90 has taken a fork
+2006 90 is eating
+2006 108 is sleeping
+2006 117 is sleeping
+2006 68 has taken a fork
+2006 118 has taken a fork
+2006 118 has taken a fork
+2006 118 is eating
+2006 86 has taken a fork
+2006 86 has taken a fork
+2006 86 is eating
+2006 127 is sleeping
+2006 119 is sleeping
+2006 100 has taken a fork
+2006 100 has taken a fork
+2006 100 is eating
+2006 107 has taken a fork
+2006 98 has taken a fork
+2006 98 has taken a fork
+2006 98 is eating
+2006 129 is sleeping
+2006 125 is sleeping
+2006 6 has taken a fork
+2006 6 has taken a fork
+2006 6 is eating
+2006 123 is sleeping
+2006 126 has taken a fork
+2006 126 has taken a fork
+2006 126 is eating
+2006 115 is sleeping
+2006 92 has taken a fork
+2006 40 has taken a fork
+2006 40 has taken a fork
+2006 40 is eating
+2006 116 has taken a fork
+2006 116 has taken a fork
+2006 116 is eating
+2007 32 has taken a fork
+2007 32 has taken a fork
+2007 32 is eating
+2007 121 is sleeping
+2007 34 has taken a fork
+2007 34 has taken a fork
+2007 34 is eating
+2007 111 has taken a fork
+2007 69 is sleeping
+2007 68 has taken a fork
+2007 68 is eating
+2007 70 has taken a fork
+2007 70 has taken a fork
+2007 70 is eating
+2007 147 is sleeping
+2007 37 is thinking
+2007 112 is thinking
+2007 81 is sleeping
+2007 82 has taken a fork
+2007 82 has taken a fork
+2007 82 is eating
+2007 120 has taken a fork
+2007 120 has taken a fork
+2007 120 is eating
+2007 106 is sleeping
+2007 107 has taken a fork
+2007 107 is eating
+2008 139 is sleeping
+2008 95 is sleeping
+2008 66 has taken a fork
+2008 66 has taken a fork
+2008 66 is eating
+2008 113 is sleeping
+2008 110 is sleeping
+2008 96 has taken a fork
+2008 96 has taken a fork
+2008 96 is eating
+2008 111 has taken a fork
+2008 111 is eating
+2008 109 has taken a fork
+2008 109 has taken a fork
+2008 109 is eating
+2009 169 is sleeping
+2009 76 has taken a fork
+2009 140 has taken a fork
+2009 76 has taken a fork
+2009 76 is eating
+2009 141 is sleeping
+2009 143 is sleeping
+2009 140 has taken a fork
+2009 140 is eating
+2009 137 is sleeping
+2009 138 has taken a fork
+2009 138 has taken a fork
+2009 138 is eating
+2009 142 has taken a fork
+2009 142 has taken a fork
+2009 142 is eating
+2009 55 is sleeping
+2009 135 is sleeping
+2010 159 is sleeping
+2010 187 is sleeping
+2010 133 is sleeping
+2010 122 has taken a fork
+2010 122 has taken a fork
+2010 122 is eating
+2010 179 is sleeping
+2010 163 is sleeping
+2010 170 has taken a fork
+2010 183 is sleeping
+2010 158 has taken a fork
+2010 184 has taken a fork
+2010 145 is sleeping
+2010 146 has taken a fork
+2010 146 has taken a fork
+2010 146 is eating
+2010 157 is sleeping
+2010 197 is sleeping
+2010 173 is sleeping
+2010 158 has taken a fork
+2010 158 is eating
+2010 151 is sleeping
+2010 171 is sleeping
+2010 172 has taken a fork
+2010 172 has taken a fork
+2010 172 is eating
+2010 170 has taken a fork
+2010 170 is eating
+2010 185 is sleeping
+2010 184 has taken a fork
+2010 184 is eating
+2010 11 is sleeping
+2010 12 has taken a fork
+2010 12 has taken a fork
+2010 12 is eating
+2010 10 has taken a fork
+2010 10 is eating
+2011 93 is sleeping
+2011 180 has taken a fork
+2011 160 has taken a fork
+2011 189 is sleeping
+2011 191 is sleeping
+2011 190 has taken a fork
+2011 190 has taken a fork
+2011 190 is eating
+2011 174 has taken a fork
+2011 161 is sleeping
+2011 160 has taken a fork
+2011 160 is eating
+2011 162 has taken a fork
+2011 162 has taken a fork
+2011 162 is eating
+2011 192 has taken a fork
+2011 114 has taken a fork
+2011 114 has taken a fork
+2011 152 has taken a fork
+2011 175 is sleeping
+2011 114 is eating
+2011 176 has taken a fork
+2011 193 is sleeping
+2011 92 has taken a fork
+2011 92 is eating
+2011 144 has taken a fork
+2011 144 has taken a fork
+2011 144 is eating
+2011 194 has taken a fork
+2011 177 is sleeping
+2011 176 has taken a fork
+2011 176 is eating
+2011 192 has taken a fork
+2011 2 died

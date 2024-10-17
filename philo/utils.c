@@ -71,9 +71,11 @@ int	calculate_time(long start_time)
 void	ft_usleep(int action, t_philo *philo)
 {
 	long	goal_time;
+	(void)philo;
 
 	goal_time = get_time() + action;
-	while (goal_time > get_time() && is_dead(philo) == false)
+	// while (goal_time > get_time() && is_dead(philo) == false)
+	while (goal_time > get_time())
 	{
 		usleep(500);
 	}
