@@ -75,6 +75,7 @@ void	ft_usleep(int action, t_philo *philo)
 
 	goal_time = get_time() + action;
 	// while (goal_time > get_time() && is_dead(philo) == false)
+	// printf ("action:%d\n", action);
 	while (goal_time > get_time())
 	{
 		usleep(500);

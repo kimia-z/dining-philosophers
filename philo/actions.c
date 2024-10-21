@@ -87,8 +87,8 @@ void	*routine(void *data)
 		if (philo->id % 2 == 0)
 		{
 			//write_msg(philo, "is thinking\n");
-			//ft_usleep(philo->table->time_eat / 200, philo);
-			ft_usleep(1, philo);
+			ft_usleep(philo->table->time_eat / 200, philo);
+			//ft_usleep(1, philo);
 		}
 		while (is_dead(philo) == false)
 		{
