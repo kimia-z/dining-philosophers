@@ -72,7 +72,7 @@ bool	is_all_full(t_table *table);
 bool	is_starve(t_table *table);
 bool	is_dead(t_philo *philo);
 
-void	ft_usleep(int action, t_philo *philo);
+void	ft_usleep(int action);
 int		calculate_time(long start_time);
 long	get_time(void);
 long	ft_atoi(const char *nptr);
